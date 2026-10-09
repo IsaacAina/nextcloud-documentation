@@ -99,10 +99,7 @@ your username). You will then be able to make changes easily. Once done,
 you can create a pull request and get the changes reviewed and back into
 the official repository.
 
-When editing either on your own local PC or on GitHub, be sure to sign of
-commits, to certify adherence to the Developer Certificate of Origin,
-see https://github.com/probot/dco . Your commit messages need to have,
-the name and email address of the contributor.
+When editing locally or directly on GitHub, sign off your commits to certify that you agree to the Developer Certificate of Origin. See the Developer Certificate of Origin for details. Your commit message must include a Signed-off-by line with your name and email address.
 
   Signed-off-by: Awesome Contributor <awesome.contributor@reach.me>
 
@@ -165,7 +162,7 @@ Building translated versions
 
 Only available in user_manual:
 
-1. Build the english version as described above before
+1. Build the English version as described above first
 2. Create translation files: ``../build/change_file_extension.sh``
 3. Create German (``de``) version: ``make html-lang-de``
 4. Find the HTML files in ``_build/html/de/index.html``
@@ -174,7 +171,7 @@ Only available in user_manual:
 Autobuilding
 ^^^^^^^^^^^^
 
-When editing the documentation installing ``sphinx-autobuild`` though pip can be helpful. This will watch file changes and automatically reload the html preview:
+When editing the documentation, installing sphinx-autobuild through pip can be helpful. This will watch file changes and automatically reload the html preview:
 
 1. Install ``pip install sphinx-autobuild``
 2. When building the developer documentation make sure to execute ``make openapi-spec`` in the repository root
@@ -218,7 +215,7 @@ Using the VSCode DevContainer
 
 This repository contains a full-featured `VSCode DevContainer <https://code.visualstudio.com/docs/devcontainers/containers>`_.
 You can use it in your local development environment or via `GitHub Codespaces <https://github.com/features/codespaces>`_.
-Just open the container an use one of the commands from above to build the project. For example ``make`` to build the full
+Just open the container and use one of the commands from above to build the project. For example ``make`` to build the full
 documentation, ``make html`` to build the HTML documentation or ``make pdf`` to build the PDF documentation. You can also use
 ``make SPHINXBUILD=sphinx-autobuild html`` in combination with `port forwarding <https://code.visualstudio.com/docs/devcontainers/containers#_forwarding-or-publishing-a-port>`_
 to  watch file changes and automatically reload the html preview.
